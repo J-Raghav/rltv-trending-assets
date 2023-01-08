@@ -10,7 +10,7 @@ export const trendingAssets = [
     priceDeltaPercentage: 10,
     tvl: 60000,
     popularPairs: [2, 3],
-    accentColor: 'yellow'
+    accentColor: 'from-yellow-500/10'
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const trendingAssets = [
     priceDeltaPercentage: -12.32,
     tvl: 60000,
     popularPairs: [1],
-    accentColor: 'purple'
+    accentColor: 'from-green-500/10'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const trendingAssets = [
     priceDeltaPercentage: -11.93,
     tvl: 60000,
     popularPairs: [1, 2],
-    accentColor: 'gray'
+    accentColor: 'from-white/10'
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ export const trendingAssets = [
     priceDeltaPercentage: .26,
     tvl: 60000,
     popularPairs: [1, 3],
-    accentColor: 'yellow'
+    accentColor: 'from-yellow-500/10'
   },
   {
     id: 5,
@@ -50,16 +50,16 @@ export const trendingAssets = [
     priceDeltaPercentage: -8.1,
     tvl: 60000,
     popularPairs: [4],
-    accentColor: 'orange'
+    accentColor: 'from-orange-500/10'
   },
 ];
 
 function App() {
   return (
     <div className="w-full mh-screen bg-[#14172b] text-white flex justify-center align-middle">
-      <div className="w-4/5 my-32">
-        <h1 className="font-bold text-base text-white/80 mb-8">Trending Assets</h1>
-        <div className="grid gap-8 items-stretch grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+      <div className="w-5/6 my-32">
+        <h1 className="font-bold text-base text-white/80 mb-16">Trending Assets</h1>
+        <div className="grid gap-16 items-stretch grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
           {trendingAssets.map(
             ad => <TrendingAssetCard key={ad.id} assetDetails={ad}/>
           )}
