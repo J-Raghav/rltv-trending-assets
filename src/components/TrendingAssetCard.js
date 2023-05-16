@@ -90,37 +90,33 @@ const iconMap = {
 };
 
 const leftCurve =  [
-  "content-['']",
-  "block",
-  "h-4",
-  "w-8",
-  "absolute",
-  "-top-px",
-  "left-1/2",
-  "-translate-x-24",
-  "bg-[#1b1e33]",
-  "border-t",
-  "border-[#35384c]",
-  "rounded-tr-2xl",
-  "drop-shadow-[.5rem_-.25rem_0_#14172b]"
-]
-  .map(i => `before:${i}`)
-  .join(' ');
+  "before:content-['']",
+  "before:block",
+  "before:h-4",
+  "before:w-8",
+  "before:absolute",
+  "before:-top-px",
+  "before:left-1/2",
+  "before:-translate-x-24",
+  "before:bg-[#1b1e33]",
+  "before:border-t",
+  "before:border-[#35384c]",
+  "before:rounded-tr-2xl",
+  "before:drop-shadow-[.5rem_-.25rem_0_#14172b]"
+].join(' ');
 
 const rightCurve = [
-  "content-['']",
-  "block",
-  "h-4",
-  "w-8",
-  "absolute",
-  "-top-px",
-  "left-1/2",
-  "translate-x-16",
-  "bg-[#1b1e33]",
-  "border-t",
-  "border-[#35384c]",
-  "drop-shadow-[-.5rem_-.25rem_0_#14172b]",
-  "rounded-tl-2xl"
-]
-  .map(i => `after:${i}`)
-  .join(' ');
+  "after:content-['']",
+  "after:block",
+  "after:h-4",
+  "after:w-8",
+  "after:absolute",
+  "after:-top-px",
+  "after:left-1/2",
+  "after:translate-x-16",
+  "after:bg-[#1b1e33]",
+  "after:border-t",
+  "after:border-[#35384c]",
+  "after:drop-shadow-[-.5rem_-.25rem_0_#14172b]",
+  "after:rounded-tl-2xl"
+].join(' ');
